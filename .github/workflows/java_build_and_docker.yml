@@ -21,9 +21,6 @@ jobs:
       - name: Build Project with Gradle
         run: ./gradlew build
 
-      - name: List build artifacts
-        run: ls -la build/libs
-
       - name: Build and Push Docker Image to Docker Hub
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
